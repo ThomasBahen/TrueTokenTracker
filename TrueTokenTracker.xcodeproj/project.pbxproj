@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		DFB99B5520E6BEC9000462A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB99B5420E6BEC9000462A4 /* AppDelegate.swift */; };
-		DFB99B5720E6BEC9000462A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB99B5620E6BEC9000462A4 /* ViewController.swift */; };
 		DFB99B5A20E6BEC9000462A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB99B5820E6BEC9000462A4 /* Main.storyboard */; };
 		DFB99B5C20E6BECA000462A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB99B5B20E6BECA000462A4 /* Assets.xcassets */; };
 		DFB99B5F20E6BECA000462A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB99B5D20E6BECA000462A4 /* LaunchScreen.storyboard */; };
 		DFB99B6A20E6BECA000462A4 /* TrueTokenTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB99B6920E6BECA000462A4 /* TrueTokenTrackerTests.swift */; };
 		DFB99B7520E6BECA000462A4 /* TrueTokenTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB99B7420E6BECA000462A4 /* TrueTokenTrackerUITests.swift */; };
+		DFB99B9020E6F027000462A4 /* TokenImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB99B8F20E6F027000462A4 /* TokenImage.swift */; };
+		DFB99B9220E6F18D000462A4 /* TokenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB99B9120E6F18D000462A4 /* TokenTableViewController.swift */; };
+		DFB99B9420E6F372000462A4 /* TokenStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB99B9320E6F372000462A4 /* TokenStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		DFB99B5120E6BEC9000462A4 /* TrueTokenTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueTokenTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB99B5420E6BEC9000462A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DFB99B5620E6BEC9000462A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DFB99B5920E6BEC9000462A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFB99B5B20E6BECA000462A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFB99B5E20E6BECA000462A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		DFB99B7020E6BECA000462A4 /* TrueTokenTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueTokenTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB99B7420E6BECA000462A4 /* TrueTokenTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueTokenTrackerUITests.swift; sourceTree = "<group>"; };
 		DFB99B7620E6BECA000462A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB99B8F20E6F027000462A4 /* TokenImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenImage.swift; sourceTree = "<group>"; };
+		DFB99B9120E6F18D000462A4 /* TokenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenTableViewController.swift; sourceTree = "<group>"; };
+		DFB99B9320E6F372000462A4 /* TokenStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +101,11 @@
 		DFB99B5320E6BEC9000462A4 /* TrueTokenTracker */ = {
 			isa = PBXGroup;
 			children = (
-				DFB99B8220E6BEE9000462A4 /* Supporting Group */,
-				DFB99B5620E6BEC9000462A4 /* ViewController.swift */,
 				DFB99B5820E6BEC9000462A4 /* Main.storyboard */,
-				DFB99B5B20E6BECA000462A4 /* Assets.xcassets */,
+				DFB99B9120E6F18D000462A4 /* TokenTableViewController.swift */,
+				DFB99B9320E6F372000462A4 /* TokenStack.swift */,
+				DFB99B8F20E6F027000462A4 /* TokenImage.swift */,
+				DFB99B8220E6BEE9000462A4 /* Supporting Group */,
 				DFB99B6020E6BECA000462A4 /* Info.plist */,
 			);
 			path = TrueTokenTracker;
@@ -127,6 +132,7 @@
 		DFB99B8220E6BEE9000462A4 /* Supporting Group */ = {
 			isa = PBXGroup;
 			children = (
+				DFB99B5B20E6BECA000462A4 /* Assets.xcassets */,
 				DFB99B5420E6BEC9000462A4 /* AppDelegate.swift */,
 				DFB99B5D20E6BECA000462A4 /* LaunchScreen.storyboard */,
 			);
@@ -264,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFB99B5720E6BEC9000462A4 /* ViewController.swift in Sources */,
 				DFB99B5520E6BEC9000462A4 /* AppDelegate.swift in Sources */,
+				DFB99B9020E6F027000462A4 /* TokenImage.swift in Sources */,
+				DFB99B9420E6F372000462A4 /* TokenStack.swift in Sources */,
+				DFB99B9220E6F18D000462A4 /* TokenTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
