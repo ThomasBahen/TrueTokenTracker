@@ -97,11 +97,10 @@
 		DFB99B5320E6BEC9000462A4 /* TrueTokenTracker */ = {
 			isa = PBXGroup;
 			children = (
-				DFB99B5420E6BEC9000462A4 /* AppDelegate.swift */,
+				DFB99B8220E6BEE9000462A4 /* Supporting Group */,
 				DFB99B5620E6BEC9000462A4 /* ViewController.swift */,
 				DFB99B5820E6BEC9000462A4 /* Main.storyboard */,
 				DFB99B5B20E6BECA000462A4 /* Assets.xcassets */,
-				DFB99B5D20E6BECA000462A4 /* LaunchScreen.storyboard */,
 				DFB99B6020E6BECA000462A4 /* Info.plist */,
 			);
 			path = TrueTokenTracker;
@@ -123,6 +122,15 @@
 				DFB99B7620E6BECA000462A4 /* Info.plist */,
 			);
 			path = TrueTokenTrackerUITests;
+			sourceTree = "<group>";
+		};
+		DFB99B8220E6BEE9000462A4 /* Supporting Group */ = {
+			isa = PBXGroup;
+			children = (
+				DFB99B5420E6BEC9000462A4 /* AppDelegate.swift */,
+				DFB99B5D20E6BECA000462A4 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
