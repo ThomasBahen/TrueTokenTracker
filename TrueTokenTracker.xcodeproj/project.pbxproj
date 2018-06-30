@@ -16,6 +16,7 @@
 		DFB99B9020E6F027000462A4 /* TokenImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB99B8F20E6F027000462A4 /* TokenImage.swift */; };
 		DFB99B9220E6F18D000462A4 /* TokenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB99B9120E6F18D000462A4 /* TokenTableViewController.swift */; };
 		DFB99B9420E6F372000462A4 /* TokenStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB99B9320E6F372000462A4 /* TokenStack.swift */; };
+		DFB99B9620E6FBAC000462A4 /* TokenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB99B9520E6FBAC000462A4 /* TokenTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DFB99B8F20E6F027000462A4 /* TokenImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenImage.swift; sourceTree = "<group>"; };
 		DFB99B9120E6F18D000462A4 /* TokenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenTableViewController.swift; sourceTree = "<group>"; };
 		DFB99B9320E6F372000462A4 /* TokenStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStack.swift; sourceTree = "<group>"; };
+		DFB99B9520E6FBAC000462A4 /* TokenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				DFB99B5820E6BEC9000462A4 /* Main.storyboard */,
 				DFB99B9120E6F18D000462A4 /* TokenTableViewController.swift */,
+				DFB99B9520E6FBAC000462A4 /* TokenTableViewCell.swift */,
 				DFB99B9320E6F372000462A4 /* TokenStack.swift */,
 				DFB99B8F20E6F027000462A4 /* TokenImage.swift */,
 				DFB99B8220E6BEE9000462A4 /* Supporting Group */,
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFB99B5520E6BEC9000462A4 /* AppDelegate.swift in Sources */,
+				DFB99B9620E6FBAC000462A4 /* TokenTableViewCell.swift in Sources */,
 				DFB99B9020E6F027000462A4 /* TokenImage.swift in Sources */,
 				DFB99B9420E6F372000462A4 /* TokenStack.swift in Sources */,
 				DFB99B9220E6F18D000462A4 /* TokenTableViewController.swift in Sources */,

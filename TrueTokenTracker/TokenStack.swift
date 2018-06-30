@@ -10,6 +10,12 @@ import Foundation
 
 class TokenStack {
     
-    var powerToughness = "2/2"
-    var creatureType = "Lizard Soldier"
+    var name : String
+    var power: Int
+    var toughness: Int
+    init(name: String, power: Int, toughness: Int) {
+        self.name = name
+        self.power = power
+        self.toughness = toughness
+    }
 }
