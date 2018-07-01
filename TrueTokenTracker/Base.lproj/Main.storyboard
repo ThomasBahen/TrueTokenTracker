@@ -13,10 +13,21 @@
         <scene sceneID="HeG-GY-fJX">
             <objects>
                 <viewController id="74O-dN-SDx" customClass="TokenTableViewController" customModule="TrueTokenTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0bq-UL-fBC">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0bq-UL-fBC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="90o-tp-P9J">
+                            <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem systemItem="add" id="P0b-36-O5o">
+                                    <connections>
+                                        <action selector="addNewTokenStack:" destination="74O-dN-SDx" id="Hqw-Cv-Dqc"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TokenCounter" textLabel="Oao-BJ-Nsv" detailTextLabel="XDu-tQ-f0O" style="IBUITableViewCellStyleValue1" id="5gu-6J-V1f">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
@@ -44,13 +55,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem systemItem="add" id="m6y-gE-wf9">
-                            <connections>
-                                <action selector="addNewTokenStack:" destination="74O-dN-SDx" id="ycL-UW-TIR"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nt-yI-qVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
