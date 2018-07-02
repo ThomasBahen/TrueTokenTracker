@@ -13,6 +13,8 @@ class TokenStack {
     var name : String
     var power: Int
     var toughness: Int
+    var abilities: [String]?
+    
     init(name: String, power: Int, toughness: Int) {
         self.name = name
         self.power = power
