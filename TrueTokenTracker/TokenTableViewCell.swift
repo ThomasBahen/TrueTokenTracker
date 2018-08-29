@@ -8,13 +8,20 @@
 
 import UIKit
 
-class TokenTableViewCell: UITableViewCell {
+class TokenTableViewCell: UITableViewCell, UITextFieldDelegate {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
 
+    }
+    @IBOutlet weak var keywordLabel: UILabel!
+    @IBOutlet weak var tokenNameLabel: UILabel!
+    @IBOutlet weak var powerToughnessLabel: UILabel!
+    @IBOutlet weak var numberOfTokensLabel: UILabel!
+    
+    @IBAction func TokenStepped(_ sender: UIStepper) {
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

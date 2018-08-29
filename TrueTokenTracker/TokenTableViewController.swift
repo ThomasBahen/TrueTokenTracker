@@ -10,12 +10,16 @@ import UIKit
 
 class TokenTableViewController: UITableViewController {
     // TESTING VARIABLES
-    let lizardSoldier = TokenStack(name: "Lizard Soldier", power: 2 , toughness: 2 )
-    let humanCleric = TokenStack(name: "Human Cleric", power: 1 , toughness: 2 )
+    let lizardSoldier = TokenStack(name: "Lizard Soldier", power: "2" , toughness: "3" )
+   
     
     lazy var totalTokens: [TokenStack] = [lizardSoldier]
     
-
+  
+    
+    
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -24,23 +28,30 @@ class TokenTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return totalTokens.count
+        
     }
-
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+       
+        tableView.estimatedRowHeight = 127
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.reloadData()
+        
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TokenCounter", for: indexPath)
+        let cell  = tableView.dequeueReusableCell(withIdentifier: "TokenCounter", for: indexPath) as! TokenTableViewCell
 
-        cell.textLabel?.text = totalTokens[indexPath.row].name
-        cell.detailTextLabel?.text = String(totalTokens[indexPath.row].power) +  "/" + String(totalTokens[indexPath.row].toughness)
+       cell.tokenNameLabel?.text = totalTokens[indexPath.row].name
+       cell.powerToughnessLabel?.text = totalTokens[indexPath.row].power +  "/" + totalTokens[indexPath.row].toughness
+        cell.numberOfTokensLabel?.text = "Number:" + String(totalTokens[indexPath.row].tokenCount)
         
 
         return cell
     }
     
-    @IBAction func addNewTokenStack(_ sender: UIBarButtonItem) {
-        totalTokens += [humanCleric]
-        tableView.reloadData()
-    }
+   
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
@@ -49,7 +60,13 @@ class TokenTableViewController: UITableViewController {
         }
     }
     
-    /*
+    @IBAction func didUnwindFromTableViewVC(_ sender: UIStoryboardSegue)    {
+        guard let creationVC = sender.source as? CreationCollectionViewController else {return}
+        let newToken = TokenStack(name: creationVC.tokenNameTextField.text!, power: creationVC.powerTextField.text!, toughness: creationVC.toughnessTextField.text!)
+        
+        totalTokens += [newToken]
+        tableView.reloadData()
+    }    /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.

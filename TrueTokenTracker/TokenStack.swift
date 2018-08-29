@@ -11,13 +11,15 @@ import Foundation
 class TokenStack {
     
     var name : String
-    var power: Int
-    var toughness: Int
-    var abilities: [String]?
+    var power: String
+    var toughness: String
+    var keywords: [String]?
+    var tokenCount: Int
     
-    init(name: String, power: Int, toughness: Int) {
+    init(name: String, power: String, toughness: String) {
         self.name = name
         self.power = power
         self.toughness = toughness
+        self.tokenCount = 1
     }
 }
