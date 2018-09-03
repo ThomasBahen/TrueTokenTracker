@@ -20,6 +20,7 @@ class TokenTableViewCell: UITableViewCell, UITextFieldDelegate {
     @IBOutlet weak var numberOfTokensLabel: UILabel!
     
     @IBAction func TokenStepped(_ sender: UIStepper) {
+        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

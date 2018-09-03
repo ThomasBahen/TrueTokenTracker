@@ -10,13 +10,16 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class CreationCollectionViewController: UICollectionViewController{
+class CreationCollectionViewController: UICollectionViewController, UITextFieldDelegate{
     
     @IBOutlet weak var keywordArea: UICollectionView!
+    
+    @IBOutlet var creationTextFields: [UITextField]!
     
     @IBOutlet weak var tokenNameTextField: UITextField!
     @IBOutlet weak var powerTextField: UITextField!
     @IBOutlet weak var toughnessTextField: UITextField!
+    
     
     
     
@@ -47,7 +50,35 @@ class CreationCollectionViewController: UICollectionViewController{
         // Do any additional setup after loading the view.
         keywordArea.dataSource = self
         
+        for textField in creationTextFields {
+            textField.delegate = self
+        }
+        
     }
+    
+    
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        //shows that the keyword area is larger than anticipated
+        self.keywordArea.flashScrollIndicators()
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        for textField in creationTextFields {
+            textField.resignFirstResponder()
+        }
+        return true
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

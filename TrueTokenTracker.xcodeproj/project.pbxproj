@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05DA1F9C213DAA9400102F62 /* KeywordCollectionViewArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DA1F9B213DAA9400102F62 /* KeywordCollectionViewArea.swift */; };
 		DF1394A42118FC9F00A6B58A /* CreationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1394A32118FC9F00A6B58A /* CreationCollectionViewController.swift */; };
 		DF1394A62119041200A6B58A /* KeywordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1394A52119041200A6B58A /* KeywordCollectionViewCell.swift */; };
 		DFB99B5520E6BEC9000462A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB99B5420E6BEC9000462A4 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05DA1F9B213DAA9400102F62 /* KeywordCollectionViewArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCollectionViewArea.swift; sourceTree = "<group>"; };
 		DF1394A32118FC9F00A6B58A /* CreationCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationCollectionViewController.swift; sourceTree = "<group>"; };
 		DF1394A52119041200A6B58A /* KeywordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCollectionViewCell.swift; sourceTree = "<group>"; };
 		DFB99B5120E6BEC9000462A4 /* TrueTokenTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueTokenTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 				DFB99B9120E6F18D000462A4 /* TokenTableViewController.swift */,
 				DFB99B9520E6FBAC000462A4 /* TokenTableViewCell.swift */,
 				DFB99B9320E6F372000462A4 /* TokenStack.swift */,
+				05DA1F9B213DAA9400102F62 /* KeywordCollectionViewArea.swift */,
 				DFB99B8F20E6F027000462A4 /* TokenImage.swift */,
 				DFB99B8220E6BEE9000462A4 /* Supporting Group */,
 				DFB99B6020E6BECA000462A4 /* Info.plist */,
@@ -286,6 +289,7 @@
 				DF1394A42118FC9F00A6B58A /* CreationCollectionViewController.swift in Sources */,
 				DFB99B9420E6F372000462A4 /* TokenStack.swift in Sources */,
 				DFB99B9220E6F18D000462A4 /* TokenTableViewController.swift in Sources */,
+				05DA1F9C213DAA9400102F62 /* KeywordCollectionViewArea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
