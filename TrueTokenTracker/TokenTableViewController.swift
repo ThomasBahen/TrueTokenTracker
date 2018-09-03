@@ -42,16 +42,14 @@ class TokenTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell  = tableView.dequeueReusableCell(withIdentifier: "TokenCounter", for: indexPath) as! TokenTableViewCell
-
-       cell.tokenNameLabel?.text = totalTokens[indexPath.row].name
-       cell.powerToughnessLabel?.text = totalTokens[indexPath.row].power +  "/" + totalTokens[indexPath.row].toughness
-        cell.numberOfTokensLabel?.text = "Number:" + String(totalTokens[indexPath.row].tokenCount)
         
-
+        cell.currentToken = totalTokens[indexPath.row]
+    
         return cell
     }
     
    
+    
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {

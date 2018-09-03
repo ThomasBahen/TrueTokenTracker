@@ -12,15 +12,26 @@ class TokenTableViewCell: UITableViewCell, UITextFieldDelegate {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
+    
+    var currentToken: TokenStack! {
+        didSet{
+            tokenStepper.value = Double(currentToken.tokenCount)
+            tokenNameLabel.text = currentToken.name
+            powerToughnessLabel.text = currentToken.power +  "/" + currentToken.toughness
+            numberOfTokensLabel.text = "Number: " + String(currentToken.tokenCount)
+        }
+    }
+    
     @IBOutlet weak var keywordLabel: UILabel!
     @IBOutlet weak var tokenNameLabel: UILabel!
     @IBOutlet weak var powerToughnessLabel: UILabel!
     @IBOutlet weak var numberOfTokensLabel: UILabel!
+    @IBOutlet weak var tokenStepper: UIStepper!
     
     @IBAction func TokenStepped(_ sender: UIStepper) {
-        
+        currentToken.tokenCount = Int(sender.value)
+        numberOfTokensLabel.text = "Number: " + String(currentToken.tokenCount)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -47,7 +47,7 @@
                                         <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="oNI-f6-gic">
                                             <rect key="frame" x="136" y="96" width="94" height="29"/>
                                             <connections>
-                                                <action selector="TokenStepped:" destination="5gu-6J-V1f" eventType="valueChanged" id="LNy-yI-AuE"/>
+                                                <action selector="TokenStepped:" destination="5gu-6J-V1f" eventType="valueChanged" id="SAT-KZ-d9Z"/>
                                             </connections>
                                         </stepper>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P/T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loW-uB-Iwx">
@@ -100,8 +100,10 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="keywordLabel" destination="5Wi-XG-eZm" id="hkx-BQ-OrR"/>
+                                    <outlet property="numberOfTokensLabel" destination="5kK-8R-TUi" id="ryb-WH-wPc"/>
                                     <outlet property="powerToughnessLabel" destination="loW-uB-Iwx" id="fwy-8t-7WC"/>
                                     <outlet property="tokenNameLabel" destination="fwt-Sh-m8Q" id="6lo-nY-IGL"/>
+                                    <outlet property="tokenStepper" destination="oNI-f6-gic" id="aHs-ZP-EQP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
