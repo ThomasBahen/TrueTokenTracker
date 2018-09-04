@@ -22,4 +22,12 @@ class TokenStack {
         self.toughness = toughness
         self.tokenCount = 1
     }
+    
+    init(name: String, power: String, toughness: String, keywords: [String]?) {
+        self.name = name
+        self.power = power
+        self.toughness = toughness
+        self.tokenCount = 1
+        self.keywords = keywords
+    }
 }

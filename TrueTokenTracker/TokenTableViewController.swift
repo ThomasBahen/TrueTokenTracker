@@ -60,7 +60,7 @@ class TokenTableViewController: UITableViewController {
     
     @IBAction func didUnwindFromTableViewVC(_ sender: UIStoryboardSegue)    {
         guard let creationVC = sender.source as? CreationCollectionViewController else {return}
-        let newToken = TokenStack(name: creationVC.tokenNameTextField.text!, power: creationVC.powerTextField.text!, toughness: creationVC.toughnessTextField.text!)
+        let newToken = TokenStack(name: creationVC.tokenNameTextField.text!, power: creationVC.powerTextField.text!, toughness: creationVC.toughnessTextField.text!, keywords: creationVC.currentKeywords)
         
         totalTokens += [newToken]
         tableView.reloadData()

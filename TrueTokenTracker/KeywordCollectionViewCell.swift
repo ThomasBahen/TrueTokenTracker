@@ -10,7 +10,8 @@ import UIKit
 
 class KeywordCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var keywordName: UILabel!
+    @IBOutlet weak var keywordName: UIButton!
+    
     
     
     

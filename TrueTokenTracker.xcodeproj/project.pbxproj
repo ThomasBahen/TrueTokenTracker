@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05B21724213F002F00E73A1E /* keywordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B21723213F002F00E73A1E /* keywordButton.swift */; };
 		05DA1F9C213DAA9400102F62 /* KeywordCollectionViewArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DA1F9B213DAA9400102F62 /* KeywordCollectionViewArea.swift */; };
 		DF1394A42118FC9F00A6B58A /* CreationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1394A32118FC9F00A6B58A /* CreationCollectionViewController.swift */; };
 		DF1394A62119041200A6B58A /* KeywordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1394A52119041200A6B58A /* KeywordCollectionViewCell.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05B21723213F002F00E73A1E /* keywordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keywordButton.swift; sourceTree = "<group>"; };
 		05DA1F9B213DAA9400102F62 /* KeywordCollectionViewArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCollectionViewArea.swift; sourceTree = "<group>"; };
 		DF1394A32118FC9F00A6B58A /* CreationCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationCollectionViewController.swift; sourceTree = "<group>"; };
 		DF1394A52119041200A6B58A /* KeywordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				DF1394A32118FC9F00A6B58A /* CreationCollectionViewController.swift */,
+				05B21723213F002F00E73A1E /* keywordButton.swift */,
 				DFB99B5820E6BEC9000462A4 /* Main.storyboard */,
 				DF1394A52119041200A6B58A /* KeywordCollectionViewCell.swift */,
 				DFB99B9120E6F18D000462A4 /* TokenTableViewController.swift */,
@@ -285,6 +288,7 @@
 				DFB99B5520E6BEC9000462A4 /* AppDelegate.swift in Sources */,
 				DFB99B9620E6FBAC000462A4 /* TokenTableViewCell.swift in Sources */,
 				DF1394A62119041200A6B58A /* KeywordCollectionViewCell.swift in Sources */,
+				05B21724213F002F00E73A1E /* keywordButton.swift in Sources */,
 				DFB99B9020E6F027000462A4 /* TokenImage.swift in Sources */,
 				DF1394A42118FC9F00A6B58A /* CreationCollectionViewController.swift in Sources */,
 				DFB99B9420E6F372000462A4 /* TokenStack.swift in Sources */,

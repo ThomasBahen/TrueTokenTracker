@@ -20,6 +20,11 @@ class TokenTableViewCell: UITableViewCell, UITextFieldDelegate {
             tokenNameLabel.text = currentToken.name
             powerToughnessLabel.text = currentToken.power +  "/" + currentToken.toughness
             numberOfTokensLabel.text = "Number: " + String(currentToken.tokenCount)
+            
+            
+           let keywords = currentToken.keywords?.joined(separator: ", ") ?? ""
+            keywordLabel.text = "Keywords: " + keywords
+          
         }
     }
     
