@@ -88,6 +88,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05698A8F21C716CA003A5CB0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DFB99B9120E6F18D000462A4 /* TokenTableViewController.swift */,
+				DF1394A32118FC9F00A6B58A /* CreationCollectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		05698A9021C71715003A5CB0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DFB99B9520E6FBAC000462A4 /* TokenTableViewCell.swift */,
+				DF1394A52119041200A6B58A /* KeywordCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		05698A9121C7174C003A5CB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFB99B9320E6F372000462A4 /* TokenStack.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05698A9221C7176A003A5CB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05698A9021C71715003A5CB0 /* Cells */,
+				05B21723213F002F00E73A1E /* keywordButton.swift */,
+				05DA1F9B213DAA9400102F62 /* KeywordCollectionViewArea.swift */,
+				DFB99B8F20E6F027000462A4 /* TokenImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DFB99B4820E6BEC9000462A4 = {
 			isa = PBXGroup;
 			children = (
@@ -111,15 +148,10 @@
 		DFB99B5320E6BEC9000462A4 /* TrueTokenTracker */ = {
 			isa = PBXGroup;
 			children = (
-				DF1394A32118FC9F00A6B58A /* CreationCollectionViewController.swift */,
-				05B21723213F002F00E73A1E /* keywordButton.swift */,
+				05698A9221C7176A003A5CB0 /* View */,
+				05698A9121C7174C003A5CB0 /* Model */,
+				05698A8F21C716CA003A5CB0 /* Controllers */,
 				DFB99B5820E6BEC9000462A4 /* Main.storyboard */,
-				DF1394A52119041200A6B58A /* KeywordCollectionViewCell.swift */,
-				DFB99B9120E6F18D000462A4 /* TokenTableViewController.swift */,
-				DFB99B9520E6FBAC000462A4 /* TokenTableViewCell.swift */,
-				DFB99B9320E6F372000462A4 /* TokenStack.swift */,
-				05DA1F9B213DAA9400102F62 /* KeywordCollectionViewArea.swift */,
-				DFB99B8F20E6F027000462A4 /* TokenImage.swift */,
 				DFB99B8220E6BEE9000462A4 /* Supporting Group */,
 				DFB99B6020E6BECA000462A4 /* Info.plist */,
 			);
