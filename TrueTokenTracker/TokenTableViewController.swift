@@ -36,7 +36,7 @@ class TokenTableViewController: UITableViewController {
         
        
         tableView.estimatedRowHeight = 127
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.reloadData()
         
     }
@@ -51,8 +51,8 @@ class TokenTableViewController: UITableViewController {
    
     
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == UITableViewCellEditingStyle.delete {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
             totalTokens.remove(at: indexPath.row)
             tableView.reloadData()
         }

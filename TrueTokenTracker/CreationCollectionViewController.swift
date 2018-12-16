@@ -39,7 +39,7 @@ class CreationCollectionViewController: UICollectionViewController, UITextFieldD
                                    "Flash"]
     
     var currentKeywords:[String]?
-    
+    var keywordField: UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,14 +115,33 @@ class CreationCollectionViewController: UICollectionViewController, UITextFieldD
         if ( currentKeywords?.append(name) == nil ) {
             currentKeywords = [name]
         }
-        print(currentKeywords)
     }
     
     func removeKeyword(_ name: String){
         currentKeywords = currentKeywords?.filter{$0 != name}
     }
     
-
+    @IBAction func createKeyword(_ sender: UIButton) {
+        let keywordController = UIAlertController(title: "Create a Keyword", message: nil, preferredStyle: .alert)
+        keywordController.addTextField(configurationHandler: keywordField)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: self.okHandler)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        keywordController.addAction(okAction)
+        keywordController.addAction(cancelAction)
+        
+        self.present(keywordController, animated: true)
+    }
+    
+    func keywordField(textField: UITextField!){
+        keywordField = textField
+        keywordField?.placeholder = "New Keyword"
+    }
+    
+    func okHandler(alert: UIAlertAction!){
+        addKeyword(keywordField!.text!)
+        
+    }
     // MARK: UICollectionViewDelegate
 
     /*
